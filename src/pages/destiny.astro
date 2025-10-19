@@ -1,0 +1,212 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Icon from '../components/Icon.astro';
+import { t } from '@/i18n/store';
+---
+
+<Layout title="Numărul Destinului - Astro Mystical">
+  <Header />
+  
+  <div class="min-h-screen py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-mystical-50 mb-4">Numărul Destinului</h1>
+        <p class="text-xl text-mystical-300">Descoperă-ți calea vieții prin numerologie</p>
+      </div>
+
+      <!-- Calculator -->
+      <div class="bg-mystical-800/50 backdrop-blur-sm rounded-2xl p-8 border border-mystical-700 mb-8">
+        <div class="text-center mb-6">
+          <h2 class="text-2xl font-bold text-mystical-50 mb-2">Calculează-ți numărul destinului</h2>
+          <p class="text-mystical-300">Introdu data nașterii pentru a-ți afla numărul căii în viață</p>
+        </div>
+        
+        <div class="max-w-md mx-auto">
+          <input 
+            type="date" 
+            class="w-full bg-mystical-900/50 border border-mystical-600 rounded-lg px-4 py-3 text-mystical-50 focus:border-cosmic-500 focus:outline-none focus:ring-2 focus:ring-cosmic-500/20"
+          />
+          <button class="w-full mt-4 bg-gradient-to-r from-cosmic-500 to-spiritual-500 text-white px-6 py-3 rounded-lg font-semibold hover:from-cosmic-600 hover:to-spiritual-600 transition-all duration-300">
+            <Icon name="Calculator" class="w-5 h-5 inline mr-2" />
+            Calculează Destinul
+          </button>
+        </div>
+      </div>
+
+      <!-- Sample Destiny Number -->
+      <div class="bg-mystical-800/50 backdrop-blur-sm rounded-2xl p-8 border border-mystical-700 mb-8">
+        <div class="text-center mb-6">
+          <div class="text-6xl font-bold text-cosmic-400 mb-4">7</div>
+          <h3 class="text-3xl font-bold text-mystical-50 mb-2">Căutătorul</h3>
+          <p class="text-mystical-300">Calea ta în viață este a descoperirii spirituale și a înțelepciunii interioare</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Meaning -->
+          <div class="bg-mystical-900/50 rounded-xl p-6">
+            <h4 class="text-lg font-semibold text-mystical-50 mb-3 flex items-center">
+              <Icon name="Star" class="w-5 h-5 text-cosmic-400 mr-2" />
+              Semnificația căii în viață
+            </h4>
+            <p class="text-mystical-300 leading-relaxed">
+              Ca număr al destinului 7, ești un căutător natural al adevărului și al înțelepciunii. Calea ta implică
+              introspecție profundă, creștere spirituală și urmărirea cunoașterii. Ai o intuiție puternică și ești atras de misterele vieții.
+            </p>
+          </div>
+
+          <!-- Traits -->
+          <div class="bg-mystical-900/50 rounded-xl p-6">
+            <h4 class="text-lg font-semibold text-mystical-50 mb-3 flex items-center">
+              <Icon name="Heart" class="w-5 h-5 text-spiritual-400 mr-2" />
+              Trăsături cheie
+            </h4>
+            <ul class="space-y-2 text-mystical-300">
+              <li class="flex items-center"><Icon name="Zap" class="w-4 h-4 text-cosmic-400 mr-2" />Foarte intuitiv și spiritual</li>
+              <li class="flex items-center"><Icon name="Zap" class="w-4 h-4 text-cosmic-400 mr-2" />Rezolvator natural de probleme</li>
+              <li class="flex items-center"><Icon name="Zap" class="w-4 h-4 text-cosmic-400 mr-2" />Independent și autosuficient</li>
+              <li class="flex items-center"><Icon name="Zap" class="w-4 h-4 text-cosmic-400 mr-2" />Atras de mistere și cunoaștere ezoterică</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Challenges & Opportunities -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+          <div class="bg-mystical-900/50 rounded-xl p-6">
+            <h4 class="text-lg font-semibold text-mystical-50 mb-3 flex items-center">
+              <Icon name="Target" class="w-5 h-5 text-cosmic-400 mr-2" />
+              Provocări în viață
+            </h4>
+            <ul class="space-y-2 text-mystical-300">
+              <li>• Tendința de a gândi și analiza excesiv</li>
+              <li>• Poți simți izolare sau neînțelegere</li>
+              <li>• Tendințe perfecționiste</li>
+              <li>• Dificultate în a avea încredere în alții</li>
+            </ul>
+          </div>
+
+          <div class="bg-mystical-900/50 rounded-xl p-6">
+            <h4 class="text-lg font-semibold text-mystical-50 mb-3 flex items-center">
+              <Icon name="Star" class="w-5 h-5 text-spiritual-400 mr-2" />
+              Oportunități
+            </h4>
+            <ul class="space-y-2 text-mystical-300">
+              <li>• Predare și îndrumare spirituală</li>
+              <li>• Cercetare și investigație</li>
+              <li>• Vindecare și consiliere</li>
+              <li>• Studii mistice și ezoterice</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- All Destiny Numbers -->
+      <div class="mb-12">
+        <h3 class="text-2xl font-bold text-mystical-50 mb-6 text-center">Toate numerele destinului</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- 1 -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-cosmic-500/50 transition-all duration-300">
+            <div class="text-center mb-4">
+              <div class="text-3xl font-bold text-cosmic-400 mb-2">1</div>
+              <h4 class="text-lg font-semibold text-mystical-50">Liderul</h4>
+            </div>
+            <p class="text-mystical-300 text-sm">
+              Natural born leaders with strong independence and pioneering spirit.
+            </p>
+          </div>
+
+          <!-- 2 -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-spiritual-500/50 transition-all duration-300">
+            <div class="text-center mb-4">
+              <div class="text-3xl font-bold text-spiritual-400 mb-2">2</div>
+              <h4 class="text-lg font-semibold text-mystical-50">Diplomatul</h4>
+            </div>
+            <p class="text-mystical-300 text-sm">
+              Peacemakers who excel in cooperation and harmonious relationships.
+            </p>
+          </div>
+
+          <!-- 3 -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-cosmic-500/50 transition-all duration-300">
+            <div class="text-center mb-4">
+              <div class="text-3xl font-bold text-cosmic-400 mb-2">3</div>
+              <h4 class="text-lg font-semibold text-mystical-50">Creatorul</h4>
+            </div>
+            <p class="text-mystical-300 text-sm">
+              Artistic souls with natural creativity and expressive communication.
+            </p>
+          </div>
+
+          <!-- 4 -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-cosmic-500/50 transition-all duration-300">
+            <div class="text-center mb-4">
+              <div class="text-3xl font-bold text-cosmic-400 mb-2">4</div>
+              <h4 class="text-lg font-semibold text-mystical-50">Constructorul</h4>
+            </div>
+            <p class="text-mystical-300 text-sm">
+              Practical and methodical, excellent at building solid foundations.
+            </p>
+          </div>
+
+          <!-- 5 -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-spiritual-500/50 transition-all duration-300">
+            <div class="text-center mb-4">
+              <div class="text-3xl font-bold text-spiritual-400 mb-2">5</div>
+              <h4 class="text-lg font-semibold text-mystical-50">Aventurierul</h4>
+            </div>
+            <p class="text-mystical-300 text-sm">
+              Freedom-loving spirits who thrive on change and new experiences.
+            </p>
+          </div>
+
+          <!-- 6 -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-cosmic-500/50 transition-all duration-300">
+            <div class="text-center mb-4">
+              <div class="text-3xl font-bold text-cosmic-400 mb-2">6</div>
+              <h4 class="text-lg font-semibold text-mystical-50">Îngrijitorul</h4>
+            </div>
+            <p class="text-mystical-300 text-sm">
+              Caring souls who excel in nurturing and supporting others.
+            </p>
+          </div>
+
+          <!-- 8 -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-cosmic-500/50 transition-all duration-300">
+            <div class="text-center mb-4">
+              <div class="text-3xl font-bold text-cosmic-400 mb-2">8</div>
+              <h4 class="text-lg font-semibold text-mystical-50">Realizatorul</h4>
+            </div>
+            <p class="text-mystical-300 text-sm">
+              Ambitious individuals with strong material and spiritual success.
+            </p>
+          </div>
+
+          <!-- 9 -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-spiritual-500/50 transition-all duration-300">
+            <div class="text-center mb-4">
+              <div class="text-3xl font-bold text-spiritual-400 mb-2">9</div>
+              <h4 class="text-lg font-semibold text-mystical-50">Umanitarul</h4>
+            </div>
+            <p class="text-mystical-300 text-sm">
+              Wise souls dedicated to serving humanity and spiritual growth.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button class="bg-gradient-to-r from-cosmic-500 to-spiritual-500 text-white px-6 py-3 rounded-lg font-semibold hover:from-cosmic-600 hover:to-spiritual-600 transition-all duration-300">Obține raport complet</button>
+        <button class="border border-cosmic-500 text-cosmic-400 px-6 py-3 rounded-lg font-semibold hover:bg-cosmic-500/10 transition-all duration-300">Distribuie rezultatele</button>
+        <button class="border border-spiritual-500 text-spiritual-400 px-6 py-3 rounded-lg font-semibold hover:bg-spiritual-500/10 transition-all duration-300">Salvează în profil</button>
+      </div>
+    </div>
+  </div>
+
+  <Footer />
+</Layout>
+
+
+

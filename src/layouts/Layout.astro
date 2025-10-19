@@ -1,0 +1,62 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Your personalized mystical and spiritual insights" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="ro" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Astro Mystical" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-mystical-950 text-mystical-50 font-mystical min-h-screen">
+    <div class="min-h-screen bg-gradient-to-br from-mystical-950 via-spiritual-950 to-cosmic-950">
+      <!-- Background stars -->
+      <div class="fixed inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-10 left-10 w-2 h-2 bg-cosmic-400 rounded-full animate-twinkle"></div>
+        <div class="absolute top-32 right-20 w-1 bg-cosmic-300 rounded-full animate-twinkle" style="animation-delay: 0.5s;"></div>
+        <div class="absolute top-64 left-32 w-1 h-1 bg-spiritual-400 rounded-full animate-twinkle" style="animation-delay: 1s;"></div>
+        <div class="absolute bottom-32 right-32 w-2 h-2 bg-cosmic-500 rounded-full animate-twinkle" style="animation-delay: 1.5s;"></div>
+        <div class="absolute bottom-64 left-20 w-1 h-1 bg-spiritual-300 rounded-full animate-twinkle" style="animation-delay: 2s;"></div>
+      </div>
+      
+      <slot />
+    </div>
+    
+    <!-- PWA Service Worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js');
+      }
+    </script>
+    
+    <!-- Language Initialization -->
+    <script>
+      // Initialize language on page load
+      import('/src/i18n/store.js').then(({ initLocale }) => {
+        initLocale();
+      });
+    </script>
+  </body>
+</html>
+
+

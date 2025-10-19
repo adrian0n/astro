@@ -1,0 +1,32 @@
+{
+  "app": {
+    "title": "Astro Mystical - Călătoria ta cosmică",
+    "tagline": "Călătoria ta cosmică",
+    "description": "Descoperă-ți destinul cosmic cu horoscoape personalizate, numere îngerești și ghidare spirituală",
+    "start": "Începe Călătoria",
+    "learnMore": "Află mai multe",
+    "getStartedFree": "Începe gratuit",
+    "viewPricing": "Vezi prețurile"
+  },
+  "nav": {
+    "home": "Acasă",
+    "horoscope": "Horoscop",
+    "angels": "Numere Îngerești",
+    "destiny": "Destin",
+    "community": "Comunitate"
+  },
+  "home": {
+    "headline1": "Descoperă-ți",
+    "headline2": "Destinul Cosmic",
+    "featuresTitle": "Funcționalități Mistice",
+    "featuresSubtitle": "Tot ce ai nevoie pentru călătoria ta spirituală",
+    "ctaTitle": "Ești gata să începi călătoria ta cosmică?",
+    "ctaDesc": "Alătură-te miilor de căutători spirituali care și-au descoperit destinul prin perspectivele noastre mistice."
+  },
+  "header": {
+    "welcome": "Bun venit"
+  }
+}
+
+
+

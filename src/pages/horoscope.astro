@@ -1,0 +1,127 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Icon from '../components/Icon.astro';
+import { t } from '@/i18n/store';
+---
+
+<Layout title="Horoscop Zilnic - Astro Mystical">
+  <Header />
+  
+  <div class="min-h-screen py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-mystical-50 mb-4">Horoscop Zilnic</h1>
+        <p class="text-xl text-mystical-300">Ghidarea ta cosmică personalizată pentru azi</p>
+      </div>
+
+      <!-- Horoscope Card -->
+      <div class="bg-mystical-800/50 backdrop-blur-sm rounded-2xl p-8 border border-mystical-700 mb-8">
+        <div class="flex items-center justify-between mb-6">
+          <div class="flex items-center space-x-3">
+            <div class="w-12 h-12 bg-gradient-to-br from-cosmic-500 to-spiritual-500 rounded-lg flex items-center justify-center">
+              <Icon name="Star" class="w-6 h-6 text-white" />
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-mystical-50">Aries</h2>
+              <p class="text-mystical-300">March 21 - April 19</p>
+            </div>
+          </div>
+          <div class="text-right">
+              <p class="text-mystical-400 text-sm">Data de azi</p>
+              <p class="text-mystical-200 font-medium">19 Decembrie 2024</p>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <!-- Main Reading -->
+          <div class="bg-mystical-900/50 rounded-xl p-6">
+            <h3 class="text-lg font-semibold text-mystical-50 mb-3 flex items-center">
+              <Icon name="Zap" class="w-5 h-5 text-cosmic-400 mr-2" />
+              Mesajul Cosmic de Azi
+            </h3>
+            <p class="text-mystical-300 leading-relaxed">
+              Stelele se aliniază în favoarea ta astăzi, dragă Berbec. Calitățile tale naturale de lider sunt amplificate,
+              iar universul îți trimite semnale clare să acționezi cu îndrăzneală. Ai încredere în instinctele tale și nu
+              te teme să ieși în evidență. Ideile tale inovatoare vor fi bine primite de cei din jur.
+            </p>
+          </div>
+
+          <!-- Lucky Elements -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-mystical-900/50 rounded-xl p-4">
+              <h4 class="text-sm font-semibold text-mystical-50 mb-2 flex items-center">
+                <Icon name="Star" class="w-4 h-4 text-cosmic-400 mr-2" />
+                Numere Norocoase
+              </h4>
+              <div class="flex space-x-2">
+                <span class="bg-cosmic-500/20 text-cosmic-300 px-2 py-1 rounded text-sm">7</span>
+                <span class="bg-cosmic-500/20 text-cosmic-300 px-2 py-1 rounded text-sm">14</span>
+                <span class="bg-cosmic-500/20 text-cosmic-300 px-2 py-1 rounded text-sm">21</span>
+                <span class="bg-cosmic-500/20 text-cosmic-300 px-2 py-1 rounded text-sm">28</span>
+              </div>
+            </div>
+
+            <div class="bg-mystical-900/50 rounded-xl p-4">
+              <h4 class="text-sm font-semibold text-mystical-50 mb-2 flex items-center">
+                <Icon name="Heart" class="w-4 h-4 text-spiritual-400 mr-2" />
+                Culori Norocoase
+              </h4>
+              <div class="flex space-x-2">
+                <span class="bg-red-500/20 text-red-300 px-2 py-1 rounded text-sm">Red</span>
+                <span class="bg-orange-500/20 text-orange-300 px-2 py-1 rounded text-sm">Orange</span>
+              </div>
+            </div>
+
+            <div class="bg-mystical-900/50 rounded-xl p-4">
+              <h4 class="text-sm font-semibold text-mystical-50 mb-2 flex items-center">
+                <Icon name="Moon" class="w-4 h-4 text-cosmic-400 mr-2" />
+                Dispoziție
+              </h4>
+              <span class="bg-cosmic-500/20 text-cosmic-300 px-2 py-1 rounded text-sm">Încrezător & Energetic</span>
+            </div>
+          </div>
+
+          <!-- Compatibility -->
+          <div class="bg-mystical-900/50 rounded-xl p-6">
+            <h3 class="text-lg font-semibold text-mystical-50 mb-3">Compatibilitatea de Azi</h3>
+            <p class="text-mystical-300 mb-4">
+              Energia ta rezonează puternic cu Leu și Săgetător astăzi. Aceste semne de foc îți vor
+              înțelege nevoia de aventură și entuziasm.
+            </p>
+            <div class="flex space-x-4">
+              <div class="text-center">
+                <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-full flex items-center justify-center mb-2">
+                  <span class="text-white font-bold">♌</span>
+                </div>
+                <p class="text-sm text-mystical-300">Leo</p>
+                <p class="text-xs text-cosmic-400">95%</p>
+              </div>
+              <div class="text-center">
+                <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mb-2">
+                  <span class="text-white font-bold">♐</span>
+                </div>
+                <p class="text-sm text-mystical-300">Sagittarius</p>
+                <p class="text-xs text-cosmic-400">92%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button class="bg-gradient-to-r from-cosmic-500 to-spiritual-500 text-white px-6 py-3 rounded-lg font-semibold hover:from-cosmic-600 hover:to-spiritual-600 transition-all duration-300">Citire Detaliată</button>
+        <button class="border border-cosmic-500 text-cosmic-400 px-6 py-3 rounded-lg font-semibold hover:bg-cosmic-500/10 transition-all duration-300">Distribuie prietenilor</button>
+        <button class="border border-spiritual-500 text-spiritual-400 px-6 py-3 rounded-lg font-semibold hover:bg-spiritual-500/10 transition-all duration-300">Salvează în jurnal</button>
+      </div>
+    </div>
+  </div>
+
+  <Footer />
+</Layout>
+
+
+

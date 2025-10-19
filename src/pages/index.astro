@@ -1,0 +1,152 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Icon from '../components/Icon.astro';
+---
+
+<Layout title="Astro Mystical - Călătoria ta cosmică">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="relative pt-20 pb-32 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1 class="text-5xl md:text-7xl font-bold text-mystical-50 mb-6">
+          Descoperă-ți
+          <span class="bg-gradient-to-r from-cosmic-400 to-spiritual-400 bg-clip-text text-transparent">
+            Destinul Cosmic
+          </span>
+        </h1>
+        <p class="text-xl text-mystical-300 mb-8 max-w-3xl mx-auto">
+          Descoperă-ți destinul cosmic cu horoscoape personalizate, numere îngerești și perspective spirituale.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button class="bg-gradient-to-r from-cosmic-500 to-spiritual-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-cosmic-600 hover:to-spiritual-600 transition-all duration-300 transform hover:scale-105">Începe Călătoria</button>
+          <button class="border border-cosmic-500 text-cosmic-400 px-8 py-4 rounded-lg font-semibold hover:bg-cosmic-500/10 transition-all duration-300">Află mai multe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-20 bg-mystical-900/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-mystical-50 mb-4">Funcționalități Mistice</h2>
+        <p class="text-xl text-mystical-300">Tot ce ai nevoie pentru călătoria ta spirituală</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Daily Horoscopes -->
+        <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-cosmic-500/50 transition-all duration-300">
+          <div class="w-12 h-12 bg-gradient-to-br from-cosmic-500 to-cosmic-600 rounded-lg flex items-center justify-center mb-4">
+            <Icon name="Star" class="w-6 h-6 text-white" />
+          </div>
+          <h3 class="text-xl font-semibold text-mystical-50 mb-2">Daily Horoscopes</h3>
+          <p class="text-mystical-300 mb-4">
+            Personalized daily insights based on your birth chart and current planetary positions.
+          </p>
+          <a href="/horoscope" class="text-cosmic-400 hover:text-cosmic-300 font-medium">
+            Get Your Reading →
+          </a>
+        </div>
+
+        <!-- Angel Numbers -->
+        <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-spiritual-500/50 transition-all duration-300">
+          <div class="w-12 h-12 bg-gradient-to-br from-spiritual-500 to-spiritual-600 rounded-lg flex items-center justify-center mb-4">
+            <Icon name="Moon" class="w-6 h-6 text-white" />
+          </div>
+          <h3 class="text-xl font-semibold text-mystical-50 mb-2">Angel Numbers</h3>
+          <p class="text-mystical-300 mb-4">
+            Discover the spiritual messages hidden in the numbers that appear in your life.
+          </p>
+          <a href="/angel-numbers" class="text-spiritual-400 hover:text-spiritual-300 font-medium">
+            Explore Numbers →
+          </a>
+        </div>
+
+        <!-- Destiny Numbers -->
+        <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-cosmic-500/50 transition-all duration-300">
+          <div class="w-12 h-12 bg-gradient-to-br from-cosmic-500 to-spiritual-500 rounded-lg flex items-center justify-center mb-4">
+            <Icon name="Sparkles" class="w-6 h-6 text-white" />
+          </div>
+          <h3 class="text-xl font-semibold text-mystical-50 mb-2">Destiny Numbers</h3>
+          <p class="text-mystical-300 mb-4">
+            Uncover your life path, personality traits, and spiritual purpose through numerology.
+          </p>
+          <a href="/destiny" class="text-cosmic-400 hover:text-cosmic-300 font-medium">
+            Calculate Yours →
+          </a>
+        </div>
+
+        <!-- AI-Powered Insights -->
+        <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-cosmic-500/50 transition-all duration-300">
+          <div class="w-12 h-12 bg-gradient-to-br from-cosmic-500 to-cosmic-600 rounded-lg flex items-center justify-center mb-4">
+            <Icon name="Zap" class="w-6 h-6 text-white" />
+          </div>
+          <h3 class="text-xl font-semibold text-mystical-50 mb-2">AI-Powered Insights</h3>
+          <p class="text-mystical-300 mb-4">
+            Advanced AI generates personalized content tailored to your unique spiritual journey.
+          </p>
+          <a href="/ai-insights" class="text-cosmic-400 hover:text-cosmic-300 font-medium">
+            Experience AI →
+          </a>
+        </div>
+
+        <!-- Community -->
+        <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-spiritual-500/50 transition-all duration-300">
+          <div class="w-12 h-12 bg-gradient-to-br from-spiritual-500 to-spiritual-600 rounded-lg flex items-center justify-center mb-4">
+            <Icon name="Heart" class="w-6 h-6 text-white" />
+          </div>
+          <h3 class="text-xl font-semibold text-mystical-50 mb-2">Spiritual Community</h3>
+          <p class="text-mystical-300 mb-4">
+            Connect with like-minded souls and share your mystical experiences.
+          </p>
+          <a href="/community" class="text-spiritual-400 hover:text-spiritual-300 font-medium">
+            Join Community →
+          </a>
+        </div>
+
+        <!-- Gamification -->
+        <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-cosmic-500/50 transition-all duration-300">
+          <div class="w-12 h-12 bg-gradient-to-br from-cosmic-500 to-spiritual-500 rounded-lg flex items-center justify-center mb-4">
+            <Icon name="Shield" class="w-6 h-6 text-white" />
+          </div>
+          <h3 class="text-xl font-semibold text-mystical-50 mb-2">Gamified Journey</h3>
+          <p class="text-mystical-300 mb-4">
+            Earn points, unlock badges, and level up as you progress on your spiritual path.
+          </p>
+          <a href="/gamification" class="text-cosmic-400 hover:text-cosmic-300 font-medium">
+            Start Earning →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20">
+    <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-mystical-50 mb-6">
+        Ești gata să începi călătoria ta cosmică?
+      </h2>
+      <p class="text-xl text-mystical-300 mb-8">
+        Alătură-te miilor de căutători spirituali care și-au descoperit destinul prin perspectivele noastre mistice.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button class="bg-gradient-to-r from-cosmic-500 to-spiritual-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-cosmic-600 hover:to-spiritual-600 transition-all duration-300 transform hover:scale-105">
+          Începe gratuit
+        </button>
+        <button class="border border-cosmic-500 text-cosmic-400 px-8 py-4 rounded-lg font-semibold hover:bg-cosmic-500/10 transition-all duration-300">
+          Vezi prețurile
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
+
+

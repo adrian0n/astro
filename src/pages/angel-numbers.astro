@@ -1,0 +1,163 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Icon from '../components/Icon.astro';
+import { t } from '@/i18n/store';
+---
+
+<Layout title="Numere Îngerești - Astro Mystical">
+  <Header />
+  
+  <div class="min-h-screen py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-mystical-50 mb-4">Numere Îngerești</h1>
+        <p class="text-xl text-mystical-300">Descifrează mesajele spirituale de la îngerii tăi păzitori</p>
+      </div>
+
+      <!-- Number Input -->
+      <div class="bg-mystical-800/50 backdrop-blur-sm rounded-2xl p-8 border border-mystical-700 mb-8">
+        <div class="text-center mb-6">
+          <h2 class="text-2xl font-bold text-mystical-50 mb-2">Introdu numărul îngeresc</h2>
+          <p class="text-mystical-300">Ce număr îți apare des în viață?</p>
+        </div>
+        
+        <div class="max-w-md mx-auto">
+          <input 
+            type="number" 
+            placeholder="ex: 111, 222, 333..."
+            class="w-full bg-mystical-900/50 border border-mystical-600 rounded-lg px-4 py-3 text-mystical-50 placeholder-mystical-400 focus:border-cosmic-500 focus:outline-none focus:ring-2 focus:ring-cosmic-500/20"
+          />
+          <button class="w-full mt-4 bg-gradient-to-r from-cosmic-500 to-spiritual-500 text-white px-6 py-3 rounded-lg font-semibold hover:from-cosmic-600 hover:to-spiritual-600 transition-all duration-300">Descifrează mesajul</button>
+        </div>
+      </div>
+
+      <!-- Popular Numbers -->
+      <div class="mb-12">
+        <h3 class="text-2xl font-bold text-mystical-50 mb-6 text-center">Numere îngerești populare</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- 111 -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-cosmic-500/50 transition-all duration-300">
+            <div class="text-center mb-4">
+              <div class="text-4xl font-bold text-cosmic-400 mb-2">111</div>
+              <h4 class="text-lg font-semibold text-mystical-50">Noi începuturi</h4>
+            </div>
+            <p class="text-mystical-300 text-sm mb-4">
+              Your angels are encouraging you to focus on positive thoughts and intentions. 
+              This is a powerful manifestation number.
+            </p>
+            <div class="flex items-center justify-center space-x-2">
+              <Icon name="Sparkles" class="w-4 h-4 text-cosmic-400" />
+              <span class="text-sm text-cosmic-300">Manifestare</span>
+            </div>
+          </div>
+
+          <!-- 222 -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-spiritual-500/50 transition-all duration-300">
+            <div class="text-center mb-4">
+              <div class="text-4xl font-bold text-spiritual-400 mb-2">222</div>
+              <h4 class="text-lg font-semibold text-mystical-50">Echilibru & Armonie</h4>
+            </div>
+            <p class="text-mystical-300 text-sm mb-4">
+              Your angels are reminding you to maintain balance in all areas of your life. 
+              Trust the process and have faith.
+            </p>
+            <div class="flex items-center justify-center space-x-2">
+              <Icon name="Heart" class="w-4 h-4 text-spiritual-400" />
+              <span class="text-sm text-spiritual-300">Armonie</span>
+            </div>
+          </div>
+
+          <!-- 333 -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-cosmic-500/50 transition-all duration-300">
+            <div class="text-center mb-4">
+              <div class="text-4xl font-bold text-cosmic-400 mb-2">333</div>
+              <h4 class="text-lg font-semibold text-mystical-50">Protecție divină</h4>
+            </div>
+            <p class="text-mystical-300 text-sm mb-4">
+              Your ascended masters are surrounding you with love and protection. 
+              You are being guided and supported.
+            </p>
+            <div class="flex items-center justify-center space-x-2">
+              <Icon name="Zap" class="w-4 h-4 text-cosmic-400" />
+              <span class="text-sm text-cosmic-300">Protecție</span>
+            </div>
+          </div>
+
+          <!-- 444 -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-cosmic-500/50 transition-all duration-300">
+            <div class="text-center mb-4">
+              <div class="text-4xl font-bold text-cosmic-400 mb-2">444</div>
+              <h4 class="text-lg font-semibold text-mystical-50">Stabilitate & Fundament</h4>
+            </div>
+            <p class="text-mystical-300 text-sm mb-4">
+              Your angels are building a strong foundation for your future. 
+              Keep working hard and stay focused on your goals.
+            </p>
+            <div class="flex items-center justify-center space-x-2">
+              <Icon name="Star" class="w-4 h-4 text-cosmic-400" />
+              <span class="text-sm text-cosmic-300">Stabilitate</span>
+            </div>
+          </div>
+
+          <!-- 555 -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-spiritual-500/50 transition-all duration-300">
+            <div class="text-center mb-4">
+              <div class="text-4xl font-bold text-spiritual-400 mb-2">555</div>
+              <h4 class="text-lg font-semibold text-mystical-50">Schimbare & Transformare</h4>
+            </div>
+            <p class="text-mystical-300 text-sm mb-4">
+              Major changes are coming your way. Embrace the transformation and trust 
+              that everything is happening for your highest good.
+            </p>
+            <div class="flex items-center justify-center space-x-2">
+              <Icon name="Sparkles" class="w-4 h-4 text-spiritual-400" />
+              <span class="text-sm text-spiritual-300">Transformare</span>
+            </div>
+          </div>
+
+          <!-- 777 -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-cosmic-500/50 transition-all duration-300">
+            <div class="text-center mb-4">
+              <div class="text-4xl font-bold text-cosmic-400 mb-2">777</div>
+              <h4 class="text-lg font-semibold text-mystical-50">Trezire spirituală</h4>
+            </div>
+            <p class="text-mystical-300 text-sm mb-4">
+              You are on the right spiritual path. Your angels are celebrating your 
+              spiritual growth and connection to the divine.
+            </p>
+            <div class="flex items-center justify-center space-x-2">
+              <Icon name="Zap" class="w-4 h-4 text-cosmic-400" />
+              <span class="text-sm text-cosmic-300">Trezire</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Daily Angel Number -->
+      <div class="bg-mystical-800/50 backdrop-blur-sm rounded-2xl p-8 border border-mystical-700">
+        <div class="text-center mb-6">
+          <h3 class="text-2xl font-bold text-mystical-50 mb-2">Numărul îngeresc al zilei</h3>
+          <p class="text-mystical-300">Mesajul tău personalizat de la îngeri</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="text-6xl font-bold text-cosmic-400 mb-4">888</div>
+          <h4 class="text-2xl font-semibold text-mystical-50 mb-4">Abundență & Succes</h4>
+          <p class="text-mystical-300 max-w-2xl mx-auto leading-relaxed">
+            Îngerii tăi îți celebrează munca și dedicarea. Abundența financiară și succesul material
+            curg în viața ta. Ai încredere că meriți toate binecuvântările care vin către tine și
+            continuă să-ți împărtășești darurile cu lumea.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <Footer />
+</Layout>
+
+
+

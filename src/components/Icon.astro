@@ -1,0 +1,223 @@
+---
+export interface Props {
+  name: string;
+  class?: string;
+  size?: number;
+}
+
+const { name, class: className = '', size = 24 } = Astro.props;
+---
+
+{name === 'Users' && (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    class={className}
+  >
+    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+    <circle cx="9" cy="7" r="4"/>
+    <path d="m22 21-3-3m0 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z"/>
+  </svg>
+)}
+
+{name === 'MessageCircle' && (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    class={className}
+  >
+    <path d="M7.5 12h-.01M12 12h-.01M16.5 12h-.01"/>
+    <path d="M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 0 1-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8Z"/>
+  </svg>
+)}
+
+{name === 'Heart' && (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    class={className}
+  >
+    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/>
+  </svg>
+)}
+
+{name === 'Star' && (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    class={className}
+  >
+    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+  </svg>
+)}
+
+{name === 'Zap' && (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    class={className}
+  >
+    <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/>
+  </svg>
+)}
+
+{name === 'TrendingUp' && (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    class={className}
+  >
+    <polyline points="22,7 13.5,15.5 8.5,10.5 2,17"/>
+    <polyline points="16,7 22,7 22,13"/>
+  </svg>
+)}
+
+{name === 'Moon' && (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    class={className}
+  >
+    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+  </svg>
+)}
+
+{name === 'Calendar' && (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    class={className}
+  >
+    <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+    <line x1="16" x2="16" y1="2" y2="6"/>
+    <line x1="8" x2="8" y1="2" y2="6"/>
+    <line x1="3" x2="21" y1="10" y2="10"/>
+  </svg>
+)}
+
+{name === 'Sparkles' && (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    class={className}
+  >
+    <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/>
+    <path d="M20 3v4"/>
+    <path d="M22 5h-4"/>
+    <path d="M4 17v2"/>
+    <path d="M5 18H3"/>
+  </svg>
+)}
+
+{name === 'Calculator' && (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    class={className}
+  >
+    <rect width="16" height="20" x="4" y="2" rx="2"/>
+    <line x1="8" x2="16" y1="6" y2="6"/>
+    <line x1="16" x2="16" y1="14" y2="18"/>
+    <path d="M16 10h.01"/>
+    <path d="M12 10h.01"/>
+    <path d="M8 10h.01"/>
+    <path d="M12 14h.01"/>
+    <path d="M8 14h.01"/>
+    <path d="M12 18h.01"/>
+    <path d="M8 18h.01"/>
+  </svg>
+)}
+
+{name === 'Target' && (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    class={className}
+  >
+    <circle cx="12" cy="12" r="10"/>
+    <circle cx="12" cy="12" r="6"/>
+    <circle cx="12" cy="12" r="2"/>
+  </svg>
+)}
+
+{name === 'Shield' && (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    stroke-width="2" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    class={className}
+  >
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+  </svg>
+)}

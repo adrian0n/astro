@@ -1,0 +1,57 @@
+---
+import { User, Menu, X } from 'lucide-react';
+import LanguageSwitcher from './LanguageSwitcher.tsx';
+---
+
+<header class="relative z-50 bg-mystical-900/80 backdrop-blur-md border-b border-mystical-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 bg-gradient-to-br from-cosmic-500 to-spiritual-500 rounded-lg flex items-center justify-center">
+          <span class="text-2xl">🔮</span>
+        </div>
+        <div>
+          <h1 class="text-xl font-bold text-mystical-50">Astro Mystical</h1>
+          <p class="text-xs text-mystical-400">Călătoria ta cosmică</p>
+        </div>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="/" class="text-mystical-300 hover:text-cosmic-400 transition-colors">Acasă</a>
+        <a href="/horoscope" class="text-mystical-300 hover:text-cosmic-400 transition-colors">Horoscop</a>
+        <a href="/angel-numbers" class="text-mystical-300 hover:text-cosmic-400 transition-colors">Numere Îngerești</a>
+        <a href="/destiny" class="text-mystical-300 hover:text-cosmic-400 transition-colors">Destin</a>
+        <a href="/community" class="text-mystical-300 hover:text-cosmic-400 transition-colors">Comunitate</a>
+      </nav>
+
+      <!-- User Menu -->
+      <div class="flex items-center space-x-4">
+        <!-- Points Display -->
+        <div class="hidden sm:flex items-center space-x-2 bg-mystical-800/50 px-3 py-1 rounded-full">
+          <span class="text-cosmic-400">⭐</span>
+          <span class="text-sm font-medium text-mystical-200">1,250</span>
+        </div>
+
+        <!-- Language Switcher -->
+        <LanguageSwitcher />
+
+        <!-- User Profile -->
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-gradient-to-br from-cosmic-500 to-spiritual-500 rounded-full flex items-center justify-center">
+            <User class="w-4 h-4 text-mystical-50" />
+          </div>
+          <span class="hidden sm:block text-sm text-mystical-300">Bun venit</span>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden p-2 text-mystical-300 hover:text-cosmic-400 transition-colors">
+          <Menu class="w-5 h-5" />
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+

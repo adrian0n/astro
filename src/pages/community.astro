@@ -1,0 +1,303 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Icon from '../components/Icon.astro';
+---
+
+<Layout title="Community - Astro Mystical">
+  <Header />
+  
+  <div class="min-h-screen py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-mystical-50 mb-4">Spiritual Community</h1>
+        <p class="text-xl text-mystical-300">Connect with like-minded souls on your cosmic journey</p>
+      </div>
+
+      <!-- Community Stats -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+        <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 text-center">
+          <Icon name="Users" class="w-8 h-8 text-cosmic-400 mx-auto mb-2" />
+          <div class="text-2xl font-bold text-mystical-50">2,847</div>
+          <div class="text-mystical-300 text-sm">Active Members</div>
+        </div>
+        <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 text-center">
+          <Icon name="MessageCircle" class="w-8 h-8 text-spiritual-400 mx-auto mb-2" />
+          <div class="text-2xl font-bold text-mystical-50">15,392</div>
+          <div class="text-mystical-300 text-sm">Discussions</div>
+        </div>
+        <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 text-center">
+          <Icon name="Heart" class="w-8 h-8 text-spiritual-400 mx-auto mb-2" />
+          <div class="text-2xl font-bold text-mystical-50">8,756</div>
+          <div class="text-mystical-300 text-sm">Supportive Hearts</div>
+        </div>
+        <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 text-center">
+          <Icon name="Star" class="w-8 h-8 text-cosmic-400 mx-auto mb-2" />
+          <div class="text-2xl font-bold text-mystical-50">4.9</div>
+          <div class="text-mystical-300 text-sm">Community Rating</div>
+        </div>
+      </div>
+
+      <!-- Featured Discussions -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-mystical-50 mb-6">Featured Discussions</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <!-- Discussion 1 -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-cosmic-500/50 transition-all duration-300">
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 bg-gradient-to-br from-cosmic-500 to-spiritual-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <span class="text-white font-bold">M</span>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center space-x-2 mb-2">
+                  <h3 class="font-semibold text-mystical-50">Moon Phase Rituals</h3>
+                  <span class="bg-cosmic-500/20 text-cosmic-300 px-2 py-1 rounded text-xs">Popular</span>
+                </div>
+                <p class="text-mystical-300 text-sm mb-3">
+                  "What are your favorite rituals during the new moon? I've been practicing gratitude journaling and it's been transformative..."
+                </p>
+                <div class="flex items-center justify-between text-sm text-mystical-400">
+                  <span>by MysticalSoul</span>
+                  <div class="flex items-center space-x-4">
+                    <span class="flex items-center">
+                      <Icon name="Heart" class="w-4 h-4 mr-1" />
+                      24
+                    </span>
+                    <span class="flex items-center">
+                      <Icon name="MessageCircle" class="w-4 h-4 mr-1" />
+                      8
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Discussion 2 -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-spiritual-500/50 transition-all duration-300">
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 bg-gradient-to-br from-spiritual-500 to-spiritual-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <span class="text-white font-bold">S</span>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center space-x-2 mb-2">
+                  <h3 class="font-semibold text-mystical-50">Angel Number 1111</h3>
+                  <span class="bg-spiritual-500/20 text-spiritual-300 px-2 py-1 rounded text-xs">New</span>
+                </div>
+                <p class="text-mystical-300 text-sm mb-3">
+                  "I keep seeing 1111 everywhere! The synchronicity is incredible. Has anyone else experienced this powerful angel number?"
+                </p>
+                <div class="flex items-center justify-between text-sm text-mystical-400">
+                  <span>by SpiritualSeeker</span>
+                  <div class="flex items-center space-x-4">
+                    <span class="flex items-center">
+                      <Icon name="Heart" class="w-4 h-4 mr-1" />
+                      18
+                    </span>
+                    <span class="flex items-center">
+                      <Icon name="MessageCircle" class="w-4 h-4 mr-1" />
+                      12
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Discussion 3 -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-cosmic-500/50 transition-all duration-300">
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 bg-gradient-to-br from-cosmic-500 to-cosmic-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <span class="text-white font-bold">A</span>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center space-x-2 mb-2">
+                  <h3 class="font-semibold text-mystical-50">Dream Interpretation</h3>
+                  <span class="bg-cosmic-500/20 text-cosmic-300 px-2 py-1 rounded text-xs">Help</span>
+                </div>
+                <p class="text-mystical-300 text-sm mb-3">
+                  "Had the most vivid dream about flying over a crystal city. The symbolism feels significant but I need help interpreting it..."
+                </p>
+                <div class="flex items-center justify-between text-sm text-mystical-400">
+                  <span>by AstralTraveler</span>
+                  <div class="flex items-center space-x-4">
+                    <span class="flex items-center">
+                      <Icon name="Heart" class="w-4 h-4 mr-1" />
+                      31
+                    </span>
+                    <span class="flex items-center">
+                      <Icon name="MessageCircle" class="w-4 h-4 mr-1" />
+                      15
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Discussion 4 -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-spiritual-500/50 transition-all duration-300">
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 bg-gradient-to-br from-spiritual-500 to-spiritual-600 rounded-full flex items-center justify-center flex-shrink-0">
+                <span class="text-white font-bold">C</span>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center space-x-2 mb-2">
+                  <h3 class="font-semibold text-mystical-50">Crystal Healing</h3>
+                  <span class="bg-spiritual-500/20 text-spiritual-300 px-2 py-1 rounded text-xs">Guide</span>
+                </div>
+                <p class="text-mystical-300 text-sm mb-3">
+                  "Sharing my crystal grid setup for the winter solstice. Amethyst, clear quartz, and rose quartz for spiritual protection..."
+                </p>
+                <div class="flex items-center justify-between text-sm text-mystical-400">
+                  <span>by CrystalHealer</span>
+                  <div class="flex items-center space-x-4">
+                    <span class="flex items-center">
+                      <Icon name="Heart" class="w-4 h-4 mr-1" />
+                      42
+                    </span>
+                    <span class="flex items-center">
+                      <Icon name="MessageCircle" class="w-4 h-4 mr-1" />
+                      9
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Community Categories -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-mystical-50 mb-6">Explore Topics</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Astrology -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-cosmic-500/50 transition-all duration-300">
+            <div class="flex items-center space-x-3 mb-4">
+              <div class="w-10 h-10 bg-gradient-to-br from-cosmic-500 to-cosmic-600 rounded-lg flex items-center justify-center">
+                <Icon name="Star" class="w-5 h-5 text-white" />
+              </div>
+              <h3 class="text-lg font-semibold text-mystical-50">Astrology</h3>
+            </div>
+            <p class="text-mystical-300 text-sm mb-4">
+              Discuss birth charts, planetary transits, and astrological insights.
+            </p>
+            <div class="flex items-center justify-between text-sm text-mystical-400">
+              <span>1,247 discussions</span>
+              <Icon name="TrendingUp" class="w-4 h-4 text-cosmic-400" />
+            </div>
+          </div>
+
+          <!-- Numerology -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-spiritual-500/50 transition-all duration-300">
+            <div class="flex items-center space-x-3 mb-4">
+              <div class="w-10 h-10 bg-gradient-to-br from-spiritual-500 to-spiritual-600 rounded-lg flex items-center justify-center">
+                <Icon name="Zap" class="w-5 h-5 text-white" />
+              </div>
+              <h3 class="text-lg font-semibold text-mystical-50">Numerology</h3>
+            </div>
+            <p class="text-mystical-300 text-sm mb-4">
+              Explore destiny numbers, angel numbers, and numerical synchronicities.
+            </p>
+            <div class="flex items-center justify-between text-sm text-mystical-400">
+              <span>892 discussions</span>
+              <Icon name="TrendingUp" class="w-4 h-4 text-spiritual-400" />
+            </div>
+          </div>
+
+          <!-- Dreams -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-cosmic-500/50 transition-all duration-300">
+            <div class="flex items-center space-x-3 mb-4">
+              <div class="w-10 h-10 bg-gradient-to-br from-cosmic-500 to-spiritual-500 rounded-lg flex items-center justify-center">
+                <Icon name="Moon" class="w-5 h-5 text-white" />
+              </div>
+              <h3 class="text-lg font-semibold text-mystical-50">Dreams</h3>
+            </div>
+            <p class="text-mystical-300 text-sm mb-4">
+              Share and interpret dreams, lucid dreaming, and spiritual experiences.
+            </p>
+            <div class="flex items-center justify-between text-sm text-mystical-400">
+              <span>654 discussions</span>
+              <Icon name="TrendingUp" class="w-4 h-4 text-cosmic-400" />
+            </div>
+          </div>
+
+          <!-- Crystals -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-spiritual-500/50 transition-all duration-300">
+            <div class="flex items-center space-x-3 mb-4">
+              <div class="w-10 h-10 bg-gradient-to-br from-spiritual-500 to-spiritual-600 rounded-lg flex items-center justify-center">
+                <Icon name="Heart" class="w-5 h-5 text-white" />
+              </div>
+              <h3 class="text-lg font-semibold text-mystical-50">Crystals</h3>
+            </div>
+            <p class="text-mystical-300 text-sm mb-4">
+              Learn about crystal healing, properties, and spiritual practices.
+            </p>
+            <div class="flex items-center justify-between text-sm text-mystical-400">
+              <span>523 discussions</span>
+              <Icon name="TrendingUp" class="w-4 h-4 text-spiritual-400" />
+            </div>
+          </div>
+
+          <!-- Meditation -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-cosmic-500/50 transition-all duration-300">
+            <div class="flex items-center space-x-3 mb-4">
+              <div class="w-10 h-10 bg-gradient-to-br from-cosmic-500 to-cosmic-600 rounded-lg flex items-center justify-center">
+                <Icon name="Zap" class="w-5 h-5 text-white" />
+              </div>
+              <h3 class="text-lg font-semibold text-mystical-50">Meditation</h3>
+            </div>
+            <p class="text-mystical-300 text-sm mb-4">
+              Share meditation techniques, mindfulness practices, and spiritual growth.
+            </p>
+            <div class="flex items-center justify-between text-sm text-mystical-400">
+              <span>789 discussions</span>
+              <Icon name="TrendingUp" class="w-4 h-4 text-cosmic-400" />
+            </div>
+          </div>
+
+          <!-- General -->
+          <div class="bg-mystical-800/50 backdrop-blur-sm rounded-xl p-6 border border-mystical-700 hover:border-spiritual-500/50 transition-all duration-300">
+            <div class="flex items-center space-x-3 mb-4">
+              <div class="w-10 h-10 bg-gradient-to-br from-spiritual-500 to-spiritual-600 rounded-lg flex items-center justify-center">
+                <Icon name="Users" class="w-5 h-5 text-white" />
+              </div>
+              <h3 class="text-lg font-semibold text-mystical-50">General</h3>
+            </div>
+            <p class="text-mystical-300 text-sm mb-4">
+              General spiritual discussions, introductions, and community support.
+            </p>
+            <div class="flex items-center justify-between text-sm text-mystical-400">
+              <span>1,156 discussions</span>
+              <Icon name="TrendingUp" class="w-4 h-4 text-spiritual-400" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Join Community CTA -->
+      <div class="bg-gradient-to-r from-cosmic-500/10 to-spiritual-500/10 backdrop-blur-sm rounded-2xl p-8 border border-cosmic-500/20 text-center">
+        <h2 class="text-2xl font-bold text-mystical-50 mb-4">Join Our Spiritual Community</h2>
+        <p class="text-mystical-300 mb-6 max-w-2xl mx-auto">
+          Connect with thousands of spiritual seekers, share your experiences, and grow together on your cosmic journey.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button class="bg-gradient-to-r from-cosmic-500 to-spiritual-500 text-white px-8 py-3 rounded-lg font-semibold hover:from-cosmic-600 hover:to-spiritual-600 transition-all duration-300">
+            Start Discussion
+          </button>
+          <button class="border border-cosmic-500 text-cosmic-400 px-8 py-3 rounded-lg font-semibold hover:bg-cosmic-500/10 transition-all duration-300">
+            Browse Topics
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <Footer />
+</Layout>
+
+
+

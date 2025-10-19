@@ -1,0 +1,32 @@
+{
+  "app": {
+    "title": "Astro Mystical - Your Cosmic Journey",
+    "tagline": "Your Cosmic Journey",
+    "description": "Discover your cosmic destiny with personalized horoscopes, angel numbers, and spiritual insights",
+    "start": "Start Your Journey",
+    "learnMore": "Learn More",
+    "getStartedFree": "Get Started Free",
+    "viewPricing": "View Pricing"
+  },
+  "nav": {
+    "home": "Home",
+    "horoscope": "Horoscope",
+    "angels": "Angel Numbers",
+    "destiny": "Destiny",
+    "community": "Community"
+  },
+  "home": {
+    "headline1": "Discover Your",
+    "headline2": "Cosmic Destiny",
+    "featuresTitle": "Mystical Features",
+    "featuresSubtitle": "Everything you need for your spiritual journey",
+    "ctaTitle": "Ready to Begin Your Cosmic Journey?",
+    "ctaDesc": "Join thousands of spiritual seekers who have discovered their destiny through our mystical insights."
+  },
+  "header": {
+    "welcome": "Welcome back"
+  }
+}
+
+
+

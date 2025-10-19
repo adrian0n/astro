@@ -1,0 +1,73 @@
+---
+import { Heart, Star, Shield, Zap } from 'lucide-react';
+---
+
+<footer class="bg-mystical-900/50 backdrop-blur-md border-t border-mystical-800 mt-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Brand -->
+      <div class="col-span-1 md:col-span-2">
+        <div class="flex items-center space-x-3 mb-4">
+          <div class="w-10 h-10 bg-gradient-to-br from-cosmic-500 to-spiritual-500 rounded-lg flex items-center justify-center">
+            <span class="text-2xl">🔮</span>
+          </div>
+          <div>
+          <h3 class="text-xl font-bold text-mystical-50">Astro Mystical</h3>
+          <p class="text-sm text-mystical-400">Călătoria ta cosmică</p>
+          </div>
+        </div>
+        <p class="text-mystical-300 mb-6 max-w-md">
+          Descoperă-ți destinul cosmic cu horoscoape personalizate, numere îngerești și perspective spirituale.
+          Alătură-te comunității noastre și descifrează tainele universului.
+        </p>
+        <div class="flex items-center space-x-2 text-mystical-400">
+          <Heart class="w-4 h-4 text-spiritual-500" />
+          <span class="text-sm">Creat cu energie cosmică</span>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="text-lg font-semibold text-mystical-50 mb-4">Linkuri rapide</h4>
+        <ul class="space-y-2">
+          <li><a href="/horoscope" class="text-mystical-300 hover:text-cosmic-400 transition-colors">Horoscop Zilnic</a></li>
+          <li><a href="/angel-numbers" class="text-mystical-300 hover:text-cosmic-400 transition-colors">Numere Îngerești</a></li>
+          <li><a href="/destiny" class="text-mystical-300 hover:text-cosmic-400 transition-colors">Numărul Destinului</a></li>
+          <li><a href="/community" class="text-mystical-300 hover:text-cosmic-400 transition-colors">Comunitate</a></li>
+        </ul>
+      </div>
+
+      <!-- Features -->
+      <div>
+        <h4 class="text-lg font-semibold text-mystical-50 mb-4">Funcționalități</h4>
+        <ul class="space-y-2">
+          <li class="flex items-center space-x-2 text-mystical-300">
+            <Star class="w-4 h-4 text-cosmic-400" />
+            <span>Citiri personalizate</span>
+          </li>
+          <li class="flex items-center space-x-2 text-mystical-300">
+            <Shield class="w-4 h-4 text-spiritual-400" />
+            <span>Îndrumare spirituală</span>
+          </li>
+          <li class="flex items-center space-x-2 text-mystical-300">
+            <Zap class="w-4 h-4 text-cosmic-500" />
+            <span>Perspective cu AI</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-mystical-800 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center">
+      <p class="text-mystical-400 text-sm">
+        © 2024 Astro Mystical. Toate drepturile rezervate.
+      </p>
+      <div class="flex space-x-6 mt-4 sm:mt-0">
+        <a href="/privacy" class="text-mystical-400 hover:text-cosmic-400 text-sm transition-colors">Confidențialitate</a>
+        <a href="/terms" class="text-mystical-400 hover:text-cosmic-400 text-sm transition-colors">Termeni</a>
+        <a href="/contact" class="text-mystical-400 hover:text-cosmic-400 text-sm transition-colors">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
